@@ -35,7 +35,7 @@ namespace Day01
             Assert.Equal(fuelRequired, expectedFuel);
         }
 
-        List<long> finalMassList = new List<long>()
+        readonly List<long> finalMassList = new List<long>()
         {
             91617,
             134652,
