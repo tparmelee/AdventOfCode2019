@@ -17,7 +17,7 @@ namespace Day03
         {
             List<string> moves1 = path1.Split(',').Select(x => x.Trim()).ToList();
             List<string> moves2 = path2.Split(',').Select(x => x.Trim()).ToList();
-            int distance = Part1.FindClosetIntersectionManhattenDistanceV2(moves1, moves2);
+            int distance = WirePathCalculator.FindClosetIntersectionManhattenDistance(moves1, moves2);
 
             Assert.Equal(expectedDistance, distance);
         }
@@ -27,7 +27,7 @@ namespace Day03
         {
             List<string> moves1 = puzzleInputPath1.Split(',').Select(x => x.Trim()).ToList();
             List<string> moves2 = puzzleInputPath2.Split(',').Select(x => x.Trim()).ToList();
-            int distance = Part1.FindClosetIntersectionManhattenDistanceV2(moves1, moves2);
+            int distance = WirePathCalculator.FindClosetIntersectionManhattenDistance(moves1, moves2);
 
             int expectedDistance = 5319;
             Assert.Equal(expectedDistance, distance);
