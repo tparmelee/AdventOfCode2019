@@ -15,7 +15,7 @@ namespace Day04
         [InlineData("123789", false)]
         public void BaseCases(string password, bool isValidExpected)
         {
-            bool isValid = P1.IsValidPassword(password);
+            bool isValid = Part1.IsValidPassword(password);
             Assert.Equal(isValidExpected, isValid);
         }
 
@@ -25,7 +25,7 @@ namespace Day04
             string s1 = "278384";
             string s2 = "824795";
 
-            long result = P1.NumberOfPasswords(s1, s2);
+            long result = Part1.NumberOfPasswords(s1, s2);
 
             Assert.Equal(921, result);
         }

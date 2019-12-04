@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Day04
 {
-    public class P1
+    public class Part1
     {
 
         public static bool IsValidPassword(string password)
